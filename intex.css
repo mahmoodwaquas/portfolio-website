@@ -1,0 +1,145 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFEDF3;
+  color: #1d232c;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0ABAB5;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+.navbar h1 {
+  font-size: 24px;
+}
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+.navbar-menu-toggle {
+  display: none;
+}
+
+/* Header */
+.HEADTOPIC {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ADEED9;
+  color: #1d232c;
+}
+.HEADTOPIC h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.HEADTOPIC h4 {
+  font-size: 18px;
+  color: #0ABAB5;
+}
+.HEADTOPIC h3{
+  color: #0ABAB5;
+  font-size: 20px;
+}
+
+/* Section Boxes */
+section {
+  background-color: white;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+  color: #0ABAB5;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0ABAB5;
+  display: inline-block;
+}
+h3 {
+  color: #56DFCF;
+  margin-bottom: 8px;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  border: 1px solid #56DFCF;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #0ABAB5;
+  color: white;
+}
+td {
+  background-color: #ADEED9;
+}
+
+/* Projects */
+.project {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #FFEDF3;
+  border-left: 5px solid #0ABAB5;
+  border-radius: 5px;
+}
+
+/* Contact */
+.icon-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.icon-links a {
+  margin: 0 15px;
+  font-size: 32px;
+  color: #0ABAB5;
+  transition: color 0.3s;
+}
+.icon-links a:hover {
+  color: #56DFCF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-menu-toggle {
+    display: block;
+  }
+}
